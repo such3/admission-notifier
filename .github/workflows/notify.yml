@@ -1,0 +1,63 @@
+name: scrape-and-mail
+
+on:
+  schedule:
+    - cron: "30 4 * * *"   # 10:00 IST
+    - cron: "30 12 * * *"  # 18:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Scrape and build page
+        run: python scraper.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - name: Email digest
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          PAGE_URL: ${{ vars.PAGE_URL }}
+        run: node mailer.js
+
+      - name: Save state
+        run: |
+          git config user.name "notifier-bot"
+          git config user.email "notifier-bot@users.noreply.github.com"
+          git add seen.db notifications.json mail_state.json index.html
+          git diff --cached --quiet || (git commit -m "update notifications" && git push)
+
+      - run: mkdir _site && cp index.html _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

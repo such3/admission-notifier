@@ -1,0 +1,36 @@
+# Add a site = add 3 lines. Point `url` at the institute's actual
+# notices / announcements / admissions page (not just the homepage) for best results.
+# These are STARTING POINTS - verify each URL in a browser and swap in the notice page.
+keywords:
+  - jrf
+  - junior research fellow
+  - ph.d
+  - phd
+  - research scholar
+  - m.tech
+  - mtech
+  - m.sc
+  - msc
+  - ms (research)
+  - ms by research
+  - admission
+  - applications invited
+  - project associate
+  - research associate
+  - gate
+exclude_keywords:
+  - tender
+  - quotation
+  - holiday
+
+sites:
+  - {name: IIT Dharwad,    kind: IIT,  url: "https://www.iitdh.ac.in/"}
+  - {name: IIT Bombay,     kind: IIT,  url: "https://www.iitb.ac.in/"}
+  - {name: IIT Madras,     kind: IIT,  url: "https://www.iitm.ac.in/"}
+  - {name: IIT Delhi,      kind: IIT,  url: "https://home.iitd.ac.in/"}
+  - {name: NIT Trichy,     kind: NIT,  url: "https://www.nitt.edu/"}
+  - {name: NIT Surathkal,  kind: NIT,  url: "https://www.nitk.ac.in/"}
+  - {name: NIT Warangal,   kind: NIT,  url: "https://www.nitw.ac.in/"}
+  - {name: IIIT Hyderabad, kind: IIIT, url: "https://www.iiit.ac.in/"}
+  - {name: IIIT Bangalore, kind: IIIT, url: "https://www.iiitb.ac.in/"}
+  - {name: IIIT Dharwad,   kind: IIIT, url: "https://iiitdwd.ac.in/"}

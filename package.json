@@ -1,0 +1,16 @@
+{
+  "name": "admission-notifier-mailer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Emails a digest of new admission/JRF/PhD notifications via Nodemailer",
+  "scripts": {
+    "mail": "node mailer.js",
+    "mail:dry": "DRY_RUN=1 node mailer.js",
+    "mail:test": "node mailer.js --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "nodemailer": "^10.1.7"
+  }
+}
