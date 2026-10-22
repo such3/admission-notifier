@@ -1,5 +1,77 @@
 [
   {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "MS and PhD Section",
+    "url": "https://www.nitt.edu/home/academics/ms_and_phd_section/",
+    "found_at": "2026-10-22T09:32:16.078576+00:00",
+    "category": "PhD"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "Admission",
+    "url": "https://www.nitt.edu/home/admissions/",
+    "found_at": "2026-10-22T09:32:16.078781+00:00",
+    "category": "Other"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "M. Tech. / M. Arch.",
+    "url": "https://www.nitt.edu/home/admissions/mtech/",
+    "found_at": "2026-10-22T09:32:16.078805+00:00",
+    "category": "Masters"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "M. Sc.",
+    "url": "https://www.nitt.edu/home/admissions/msc/",
+    "found_at": "2026-10-22T09:32:16.078819+00:00",
+    "category": "Masters"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "Ph. D.",
+    "url": "https://www.nitt.edu/home/admissions/phd/",
+    "found_at": "2026-10-22T09:32:16.078854+00:00",
+    "category": "PhD"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "Hostel Fees for ODD Semester 2026-27 (First Year Newly Admitted Students - PG, MS and PhD)",
+    "url": "https://www.nitt.edu/home/students/facilitiesnservices/hostelsnmess/HOSTEL-FEES-ODD-SEMESTER-2026-27_Newly_Admitted.pdf",
+    "found_at": "2026-10-22T09:32:16.078868+00:00",
+    "category": "PhD"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "M.Tech / M.Arch.",
+    "url": "https://www.nitt.edu/admissions/mtech",
+    "found_at": "2026-10-22T09:32:16.078873+00:00",
+    "category": "Masters"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "M.Sc",
+    "url": "https://www.nitt.edu/admissions/msc",
+    "found_at": "2026-10-22T09:32:16.078878+00:00",
+    "category": "Masters"
+  },
+  {
+    "institute": "NIT Trichy",
+    "kind": "NIT",
+    "title": "Ph.D.",
+    "url": "https://www.nitt.edu/admissions/phd",
+    "found_at": "2026-10-22T09:32:16.078895+00:00",
+    "category": "PhD"
+  },
+  {
     "institute": "IIT Dharwad",
     "kind": "IIT",
     "title": "Computer Science Engineering",
